@@ -16,28 +16,31 @@
     <div class="container">
       <h1>World O'Clock</h1>
 
-      <select class="select-city">
+      <select class="select-city" id="select-city">
         <option value="">Select a city</option>
-        <option value="Cape-Town">Cape Town</option>
-        <option value="Seoul">Seoul</option>
-        <option value="Geneva">Geneva</option>
-        <option value="Paris">Paris</option>
+        <option value="Africa/Johannesburg">Cape Town</option>
+        <option value="Asia/Seoul">Seoul</option>
+        <option value="Europe/Zurich">Geneva</option>
+        <option value="Europe/Paris">Paris</option>
       </select>
-      <div class="city" id="seoul">
-        <div>
-          <h2>Seoul <span class="fi fi-kr"></span></h2>
 
-          <div class="date"></div>
-        </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="cape-town">
-        <div>
-          <h2>Cape Town <span class="fi fi-za"></span></h2>
+      <div id="cities">
+        <div class="city" id="seoul">
+          <div>
+            <h2>Seoul <span class="fi fi-kr"></span></h2>
 
-          <div class="date"></div>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
+        <div class="city" id="cape-town">
+          <div>
+            <h2>Cape Town <span class="fi fi-za"></span></h2>
+
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
 
