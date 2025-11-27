@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
     <title>World Clock</title>
   </head>
   <body>
@@ -17,21 +23,21 @@
         <option value="Geneva">Geneva</option>
         <option value="Paris">Paris</option>
       </select>
-      <div class="city">
+      <div class="city" id="seoul">
         <div>
-          <h2>Seoul</h2>
+          <h2>Seoul <span class="fi fi-kr"></span></h2>
 
-          <div class="date">Date</div>
+          <div class="date"></div>
         </div>
-        <div class="time"><strong>Time</strong> <small>AM</small></div>
+        <div class="time"></div>
       </div>
-      <div class="city">
+      <div class="city" id="cape-town">
         <div>
-          <h2>Cape Town</h2>
+          <h2>Cape Town <span class="fi fi-za"></span></h2>
 
-          <div class="date">Date</div>
+          <div class="date"></div>
         </div>
-        <div class="time"><strong>Time</strong> <small>AM</small></div>
+        <div class="time"></div>
       </div>
     </div>
 
