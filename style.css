@@ -8,13 +8,29 @@ body {
 }
 .container {
   max-width: 600px;
-
   margin: 60px auto;
   padding: 20px 25px;
   border-radius: 6px;
   box-shadow: 10px 5px 5px grey;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/176/198/original/pexels-pixabay-48770.jpg?1764225472");
   background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+.container > * {
+  position: relative;
+  z-index: 1;
 }
 
 h1 {
