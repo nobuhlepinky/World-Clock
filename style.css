@@ -59,8 +59,12 @@ h2 {
 }
 .date {
   line-height: 0;
+  font-size: 18px;
 }
 footer {
   text-align: center;
   opacity: 0.8;
+}
+span {
+  font-size: small;
 }
